@@ -1,0 +1,23 @@
+<div>
+  <form class="login" id="cen">
+    <h2>Welcome, User!</h2>
+    <p>Please log in</p>
+    <input type="text" placeholder="User Name" [(ngModel)]="uname1" [ngModelOptions]="{standalone: true}" required>
+    <input type="password" placeholder="Password" [(ngModel)]="pass1" [ngModelOptions]="{standalone: true}" required>
+    <!-- <input type="submit" value="Log In" (click)="dashboard()"/>  -->
+    <button type="submit"  (click)="login()" >Log In</button>
+    
+    <div class="links">
+      <a href="http://localhost:4200/register">Register</a>
+    </div>
+    <!-- <div *ngIf="invalidLogin">
+      <p>Please enter both username and password.</p>
+    </div> -->
+  </form>
+  
+</div>
+
+
+<!-- routerLink="/dashboard" -->
+<!-- [disabled]="!uname1" -->
+<!-- [disabled]="!uname1 || !pass1" -->

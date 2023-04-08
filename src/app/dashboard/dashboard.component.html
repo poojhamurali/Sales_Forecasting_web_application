@@ -1,0 +1,20 @@
+<div>
+    <input type="file" (change)="onFileSelected($event)">
+  </div>
+  
+  <div>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" name="numberInput" [(ngModel)]="number">
+  </div>
+  <div>
+    <label for="periods">Choose a periodicity:</label>
+
+<select name="period" id="period">
+  <option value="Monthly">Monthly</option>
+  <option value="Weekly">Weekly</option>
+  <option value="Yearly">Yearly</option>
+</select>
+
+  </div>
+  <button (click)="onsubmit()">Upload</button>
+  <div>{{jsonData.data}}</div>
